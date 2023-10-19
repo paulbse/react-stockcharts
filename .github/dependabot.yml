@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    package-manager: "npm_and_yarn"
+    labels:
+      - "dependencies"
+    allow:
+      - dependency-name: "react-stockcharts"
+        version: ">=0.0.0"
+    dep-regex: "(?<name>[\\w\\d_.-]+): (?<current>[\\w\\d_.-]+), (?<range>.+)"
+    commit-message:
+      prefix: "chore(deps): update"
+    directory: "/"
