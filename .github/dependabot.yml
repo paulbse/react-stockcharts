@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: "daily"
     open-pull-requests-limit: 10
-    package-manager: "npm_and_yarn"
+    package-manager: "npm"
     labels:
       - "dependencies"
     allow:
